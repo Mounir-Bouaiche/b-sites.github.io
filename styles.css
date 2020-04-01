@@ -1,0 +1,140 @@
+/**
+  generated from Stylus file, enjoy coding
+*/
+/* change font */
+* {
+  font-family: ABeeZee, sans-serif;
+  box-sizing: content-box;
+}
+body {
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
+body>table {
+/* Shadow of CV, visible if page width > 1000px */
+  -webkit-box-shadow: 0 6px 6px 4px rgba(0,0,0,0.67);
+  -moz-box-shadow: 0 6px 6px 4px rgba(0,0,0,0.67);
+  box-shadow: 0 6px 6px 4px rgba(0,0,0,0.67);
+/* Limit CV width on 1000px */
+  max-width: 1000px;
+/* Center the CV on the body */
+  margin: 18px auto;
+/* Remove spaces between table cells */
+  border-spacing: 0;
+  -webkit-border-vertical-spacing: 0;
+  -webkit-border-horizontal-spacing: 0;
+}
+body #nav-wrapper,
+body #content {
+/* Align the nav bar on the top of cell */
+  vertical-align: top;
+}
+body #content {
+/* Make CV content fill max width up to 1000px */
+  width: 100%;
+}
+body #nav-wrapper,
+body #myPhoto {
+/* change background color of nav bar and my image container */
+  background-color: #e6e6e6;
+}
+body #myPhoto {
+/* align my image to center */
+  text-align: center;
+}
+body #myPhoto img {
+/* make image appear circular */
+  border: 2px solid #fff;
+  border-radius: 100%;
+/* set the width of the image = 50% */
+  max-width: 50%;
+}
+@media screen and (max-width: 700px) {
+  body #myPhoto img {
+    max-width: 75%;
+  }
+}
+body #myInfo .info {
+  padding: 6px 18px;
+}
+body #myInfo .info th {
+  text-align: left;
+}
+body #myInfo .info:nth-child(1),
+body #myInfo .info:nth-child(2) {
+  font-size: 18px;
+}
+body #nav-wrapper nav {
+/* fix the nav bar width on 250px */
+  width: 250px;
+/* this for some animations on change of width, see media query */
+  transition: all 0.25s;
+}
+@media screen and (max-width: 700px) {
+  body #nav-wrapper nav {
+    width: 25vw !important;
+    min-width: -moz-max-content !important;
+    min-width: max-content !important;
+    min-width: -webkit-max-content !important;
+  }
+}
+body #nav-wrapper nav a {
+/* make every link on new line */
+  display: block;
+/* change cursor to be pointer */
+  cursor: pointer;
+/* remove link underline decoration style, & the blue color */
+  text-decoration: none;
+  color: #000;
+/* add some padding to appear like a button -- 18px top & bottom -- 24px left & right */
+  padding: 18px 24px;
+/* add borders between links */
+  border-top: 1px solid #a6a6a6;
+}
+body #nav-wrapper nav a:last-child {
+/* add bottom border for the last link */
+  border-bottom: 1px solid #a6a6a6;
+}
+body #nav-wrapper nav a.active {
+/* change the background of current (active) link */
+  background-color: #00c853;
+  color: #fff;
+}
+body #nav-wrapper nav a:hover:not(.active) {
+/* change the background of links on hover, except current (active) link */
+  background-color: #00e676;
+}
+body #page {
+/* isolate the header from content */
+  border-top: 1px solid #e6e6e6;
+/* add padding = 6px on top & bottom / = 12px on left & right */
+  padding: 6px 12px;
+}
+body #page >h2 {
+  padding-left: 6px;
+}
+.card {
+  border: 1px solid #cfcfcf;
+  border-radius: 6px;
+  background-color: #fff;
+/* Add shadows to create the "card" effect */
+  padding: 12px 18px;
+  margin: 18px 0;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  transition: all 0.1s;
+}
+.card.animated:hover {
+  transform: translateY(-5%);
+}
+.card:hover {
+/* On mouse-over, add a deeper shadow */
+  box-shadow: 0 16px 24px 6px rgba(0,0,0,0.2);
+}
+a.card {
+  display: block;
+  text-decoration: none;
+  color: #000;
+}
+li {
+  padding: 6px;
+}

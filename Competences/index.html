@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>COMPETENCES</title>
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+      .percent {
+          padding: 6px 12px;
+          text-align: center;
+          border: 1px solid #a0a0a0;
+          border-radius: 6px 6px 6px 6px;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <table>
+      <tr id="header">
+        <td id="myPhoto">
+          <div><img alt="Mon image" src="../images/MonImage.jpeg "></div>
+        </td>
+        <td id="myInfo">
+          <table>
+            <tr class="info">
+              <th>Prénom</th>
+              <td>: MOUNIR</td>
+            </tr>
+            <tr class="info">
+              <th>Nom</th>
+              <td>: BOUAICHE</td>
+            </tr>
+            <tr class="info">
+              <th>E-mail</th>
+              <td>: bouaiche.9@gmail.com</td>
+            </tr>
+            <tr class="info">
+              <th>Adresse</th>
+              <td>: Sebaa Ayoune, El Hajeb, Maroc</td>
+            </tr>
+            <tr class="info">
+              <th>Téléphone</th>
+              <td>: 06.52.34.83.67</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr id="main">
+        <td id="nav-wrapper">
+          <nav><a href="../Formations/index.html">Formations</a><a class="active">Competences</a><a href="../Experiences/index.html">Experiences</a><a href="../Langues/index.html">Langues</a><a href="../Activites de Loisir/index.html">Activites de Loisir</a>
+          </nav>
+        </td>
+        <td id="content">
+          <div id="page">
+            <section class="card animated" style="background-color: #FFEB3B; color: black">
+              <h2>J'ai créer une application web simple 'Modelize' open source et hébergée utilisant le service Firebase Hosting</h2>
+              <div>
+                <ul>
+                  <li><b>URL</b>: <a href="http://modelize-s4.web.app" target="_blanc">modelize-s4.web.app</a></li>
+                  <li><b>GitHub Repository</b>: <a href="https://github.com/Mounir-Bouaiche/Modelize" target="_blanc">github.com/Mounir-Bouaiche/Modelize</a></li>
+                </ul>
+              </div>
+            </section>
+            <h2>Compétences</h2>
+            <div>
+              <section class="card">
+                <h3>&bull; Créer des applications Desktop utilisant JavaSE</h3>
+                <div class="percent">85</div>
+              </section>
+              <section class="card">
+                <h3>&bull; Metriser Adobe Photoshop</h3>
+                <div class="percent">80</div>
+              </section>
+              <section class="card">
+                <h3>&bull; Créer des applications utilisant C/C++</h3>
+                <div class="percent">65</div>
+              </section>
+              <section class="card">
+                <h3>&bull; Créer de pages/applications web (HTML5, CSS3, PHP5)</h3>
+                <div class="percent">90</div>
+              </section>
+              <section class="card">
+                <h3>&bull; Utiliser FrontEnd JS Framework Angular</h3>
+                <div class="percent">95</div>
+              </section>
+              <section class="card">
+                <h3>&bull; Utiliser FrontEnd JS Framework AngularJS</h3>
+                <div class="percent">70</div>
+              </section>
+              <section class="card">
+                <h3>&bull; Utiliser FrontEnd JS Framework VueJS</h3>
+                <div class="percent">75</div>
+              </section>
+              <section class="card">
+                <h3>&bull; Utiliser BackEnd PHP Framework CodeIgniter</h3>
+                <div class="percent">70</div>
+              </section>
+              <section class="card">
+                <h3>&bull; Créer des applications Android Using JAVA</h3>
+                <div class="percent">85</div>
+              </section>
+              <section class="card">
+                <h3>&bull; Créer des applications Android Using Dart (Flutter Framework)</h3>
+                <div class="percent">75</div>
+              </section>
+            </div>
+            <script>
+              const percents = document.getElementsByClassName('percent');
+              let el, w, c, tc;
+              for (let i in percents) {
+                el = percents.item(i);
+                if (!isNaN(i)) {
+                  w = parseInt(el.innerText);
+                  el.style.width = w + '%';
+                  el.innerHTML += '%';
+              
+                  if (w > 80) {
+                    c = '#00c853';
+                    tc = 'white';
+                  } else if (w > 65) {
+                    c = '#8BC34A';
+                    tc = 'white';
+                  } else if (w > 40) {
+                    c = '#ffc107';
+                    tc = 'black'
+                  } else {
+                    c = '#F44336';
+                    tc = 'white';
+                  }
+                  el.style.backgroundColor = c;
+                  el.style.color = tc;
+                }
+              }
+            </script>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
